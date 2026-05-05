@@ -1,65 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Krishna | Data Analyst</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Sabbella | Data Analyst Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e40af);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 12px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #0f172a;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .skill {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 5px 5px 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #2563eb;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Krishna Sabbella</h1>
-<p>Data Analyst | SQL | Python | Power BI</p>
+  <header>
+    <h1>Krishna Sabbella</h1>
+    <p>Data Analyst Portfolio | SQL | Python | Power BI | Data Visualization</p>
 
-<div class="section">
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn" href="#contact">Contact Me</a>
+  </header>
+
+  <section>
     <h2>About Me</h2>
     <div class="card">
-        <p>
-        Aspiring Data Analyst with strong interest in data analytics,
-        visualization, and business insights. Currently building
-        real-world projects using SQL, Python, and Power BI.
-        </p>
+      <p>
+        I am an aspiring Data Analyst building real-world projects using SQL,
+        Python, Power BI, and business analytics. My goal is to transform raw
+        data into meaningful insights, dashboards, and data-driven recommendations.
+      </p>
     </div>
-</div>
+  </section>
 
-<div class="section">
+  <section>
     <h2>Skills</h2>
-    <div class="card">
-        SQL, Python, Pandas, Power BI, Data Visualization
+    <div class="skills">
+      <div class="skill">SQL</div>
+      <div class="skill">Python</div>
+      <div class="skill">Pandas</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Excel</div>
+      <div class="skill">Data Cleaning</div>
+      <div class="skill">Dashboards</div>
+      <div class="skill">Business Analysis</div>
     </div>
-</div>
+  </section>
 
-<div class="section">
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="card">
-        <p>🚧 Projects coming soon...</p>
-    </div>
-</div>
 
-<div class="section">
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>Sales Data Analysis</h3>
+        <p>
+          Analyzed retail sales data to identify revenue trends, top products,
+          customer behavior, and business performance.
+        </p>
+        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">Power BI</span>
+        <br><br>
+        <p><strong>Status:</strong> Coming Soon</p>
+      </div>
+
+      <div class="project-card">
+        <h3>HR Analytics Dashboard</h3>
+        <p>
+          Built an interactive dashboard to analyze employee attrition,
+          department trends, and workforce insights.
+        </p>
+        <span class="tag">Power BI</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Analytics</span>
+        <br><br>
+        <p><strong>Status:</strong> Coming Soon</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Customer Insights Analysis</h3>
+        <p>
+          Used Python and SQL to analyze customer behavior, segmentation,
+          purchase trends, and retention patterns.
+        </p>
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">EDA</span>
+        <br><br>
+        <p><strong>Status:</strong> Coming Soon</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
     <div class="card">
-        <p>GitHub: https://github.com/yourusername</p>
-        <p>LinkedIn: Add your LinkedIn link</p>
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>GitHub:</strong> https://github.com/yourusername</p>
+      <p><strong>LinkedIn:</strong> Add your LinkedIn profile link</p>
     </div>
-</div>
+  </section>
+
+  <footer>
+    <p>© 2026 Krishna Sabbella | Data Analyst Portfolio</p>
+  </footer>
 
 </body>
 </html>
